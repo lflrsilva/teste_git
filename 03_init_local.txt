@@ -1,0 +1,15 @@
+# Create or choose a directory for your project
+$ echo "Hello world!" >> local_file.txt
+
+# Let's create a local repository. Execute commands on directory
+$ git init
+
+# Add files/directories to have version control atributes
+$ git add local_file.txt
+
+# The first commit is related to the file inclusion on Git
+$ git commit -m "This is the first commit. Including file on git CVS!"
+
+# We can now include our local repository on a git server
+$ git remote add origin https://github.com/lflrsilva/teste_git.git
+

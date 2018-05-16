@@ -1,0 +1,34 @@
+Let's begin your Git package configuration. You may use --global if you want
+the configuration for all Git operations. On the other hand, if you omit the
+--global option, the configuration will be valid only for this repository.
+
+Please mind that I'll keep --global option as I use the same account for every
+development project.
+
+## Setting username
+$ git config --global user.name "Put your name here"
+
+## Setting email id
+$ git config --global user.email "your@email.com"
+
+## Avoid merge commits for pulling
+If you pull the latest changes from a remote repository and it is divergent 
+from your local changes, by default Git creates merge commits. You may avoid
+this with:
+$ git config --global branch.autosetuprebase always
+
+## Pretty colors :)
+$ git config --global color.ui true
+$ git config --global color.status auto
+$ git config --global color.branch auto
+
+## Setting default editor
+Vim, for sure.
+$ git config --global core.editor vim
+
+## Setting default merge tool
+Vim again, for sure.
+$ git config --global merge.tool vimdiff
+
+## Let's check our configuration
+$ git config --list
