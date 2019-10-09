@@ -407,7 +407,8 @@ This operation is the opposite of `apply`,
 
 
 ### Reverting modifications
-In fact, git included merging identifiers on your file! And how the merging conflicts are presented? You may find `<<<<<`, `======` and `>>>>>` 
+In fact, git included merging identifiers on your file! And how the merging
+conflicts are presented? You may find `<<<<<`, `======` and `>>>>>` 
 identifiers in your file.
 
     $ cat local_file1.txt
@@ -428,14 +429,4 @@ We have some options here.
 From now, I will go for the first option and revert the changes using `git
 apply`. The later use the `git diff` output to check the differences and revert
 it. But first, we will check the commit identifier 
-
-
-# Let's include our local repository on a git server
-$ git remote add origin https://github.com/your_repository.git
-
-# We must change the server repository permanently using a push operation
-git push -u origin master
-
-# Check the file on your remote repository. You now have it there also!
-
 
